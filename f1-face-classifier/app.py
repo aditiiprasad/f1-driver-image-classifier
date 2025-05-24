@@ -3,6 +3,9 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os
+print("Current working directory:", os.getcwd())
+print("Files in current directory:", os.listdir('.'))
+
 import base64
 from io import BytesIO
 
@@ -161,3 +164,7 @@ else:
         st.session_state.selected_image = None
         st.rerun()
     st.markdown("</div>", unsafe_allow_html=True)
+
+
+
+
